@@ -30,13 +30,9 @@ jobs:
         uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install
-          
-      # disable process.env.CI before build
-      - name: disable environment variable CI
-        run: process.env.CI = false
       #Buil React app
       - name: Build React App
-        run: yarn build
+        run: CI=false yarn build
         
       # Install surge
       - name: Install Surge
