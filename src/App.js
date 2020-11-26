@@ -3,7 +3,7 @@ import Header from './components/Header'
 import Balance from './components/Balance';
 import {AccountSummary} from './components/AccountSummary'
 import {TransactionHistory} from './components/TransactionHistory'
-import { AddTransaction } from './AddTransaction';
+import { AddTransaction } from './components/AddTransaction';
 
 import {GlobalProvider} from './state/GlobalState'
 
